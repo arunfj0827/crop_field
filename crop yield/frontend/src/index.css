@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-warm-grey text-ink-black antialiased;
+        font-feature-settings: "salt";
+    }
+
+    ::selection {
+        @apply bg-vibrant-orange text-white;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
